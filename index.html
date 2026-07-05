@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preethi Victor| Senior AML Transaction Monitoring Analyst</title>
+  <meta name="description" content="Portfolio of a Senior AML Transaction Monitoring Analyst specializing in financial crime investigations, KYC/CDD, correspondent banking surveillance, and regulatory compliance.">
+  <meta name="keywords" content="AML, Anti-Money Laundering, Transaction Monitoring, KYC, CDD, Financial Crime, Compliance Analyst, Correspondent Banking, Sanctions">
+  <meta name="author" content="Alex Morgan">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Alex Morgan | Senior AML Transaction Monitoring Analyst">
+  <meta property="og:description" content="Financial Crime Compliance professional specializing in AML transaction monitoring, KYC/CDD, and correspondent banking surveillance.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Scroll progress indicator -->
+  <div class="scroll-progress" aria-hidden="true"><div class="scroll-progress__bar" id="scrollBar"></div></div>
+
+  <!-- Loading screen -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__mark">
+      <svg viewBox="0 0 40 40" width="40" height="40" aria-hidden="true">
+        <circle cx="20" cy="20" r="17" fill="none" stroke="#C9A227" stroke-width="2" stroke-dasharray="106" stroke-dashoffset="106" class="loader__ring"/>
+      </svg>
+    </div>
+    <p class="loader__text">Initializing case review<span class="dots"><span>.</span><span>.</span><span>.</span></span></p>
+  </div>
+
+  <!-- Header / Nav -->
+  <header class="site-header" id="siteHeader">
+    <nav class="nav" aria-label="Primary">
+      <a href="#home" class="nav__brand">PV<span class="nav__brand-dot">.</span></a>
+
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#home" class="nav__link is-active">Home</a></li>
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#experience" class="nav__link">Experience</a></li>
+        <li><a href="#skills" class="nav__link">Skills</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#learning" class="nav__link">Learning</a></li>
+        <li><a href="#contact" class="nav__link nav__link--cta">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Compliance ticker -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span>CASE #TM-88214 &nbsp;·&nbsp; STATUS: <em class="chip chip--cleared">CLEARED</em></span>
+        <span>ALERT TYPE: STRUCTURING &nbsp;·&nbsp; RISK SCORE: 82/100</span>
+        <span>CASE #TM-88219 &nbsp;·&nbsp; STATUS: <em class="chip chip--escalated">ESCALATED</em></span>
+        <span>JURISDICTION: HIGH-RISK &nbsp;·&nbsp; REVIEW: EDD REQUIRED</span>
+        <span>CASE #TM-88230 &nbsp;·&nbsp; STATUS: <em class="chip chip--sar">SAR FILED</em></span>
+        <span>TYPOLOGY: TRADE-BASED ML &nbsp;·&nbsp; SOF/SOW VERIFIED</span>
+        <span>CASE #TM-88214 &nbsp;·&nbsp; STATUS: <em class="chip chip--cleared">CLEARED</em></span>
+        <span>ALERT TYPE: STRUCTURING &nbsp;·&nbsp; RISK SCORE: 82/100</span>
+        <span>CASE #TM-88219 &nbsp;·&nbsp; STATUS: <em class="chip chip--escalated">ESCALATED</em></span>
+        <span>JURISDICTION: HIGH-RISK &nbsp;·&nbsp; REVIEW: EDD REQUIRED</span>
+        <span>CASE #TM-88230 &nbsp;·&nbsp; STATUS: <em class="chip chip--sar">SAR FILED</em></span>
+        <span>TYPOLOGY: TRADE-BASED ML &nbsp;·&nbsp; SOF/SOW VERIFIED</span>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero__network" aria-hidden="true">
+        <svg id="networkSvg" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice"></svg>
+        <div class="hero__scanline"></div>
+      </div>
+
+      <div class="hero__content container">
+        <p class="eyebrow">Financial Crime Compliance Professional</p>
+        <h1 class="hero__name">Preethi Rosaria Victor</h1>
+        <h2 class="hero__title">
+          <span class="typing" id="typingTarget"></span><span class="typing-cursor">|</span>
+        </h2>
+        <p class="hero__desc">
+          Experienced AML Transaction Monitoring professional specializing in financial crime investigations,
+          customer risk assessments, KYC/CDD reviews, correspondent banking surveillance, and regulatory compliance.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#projects" class="btn btn--primary">View Portfolio</a>
+          <a href="#contact" class="btn btn--ghost">Contact Me</a>
+        </div>
+
+        <div class="hero__stats">
+          <div class="hero__stat">
+            <span class="hero__stat-num" data-count="4500">0</span><span class="hero__stat-suffix">+</span>
+            <span class="hero__stat-label">Alerts Investigated</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-num" data-count="6">0</span><span class="hero__stat-suffix">+</span>
+            <span class="hero__stat-label">Years in Financial Crime</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-num" data-count="2">0</span>
+            <span class="hero__stat-label">Correspondent Banking Regions Supported</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="hero__scroll-cue" aria-label="Scroll to About section">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <div class="container">
+        <p class="section__eyebrow">01 — Profile</p>
+        <h2 class="section__title">About Me</h2>
+
+        <div class="about__grid">
+          <div class="about__copy">
+            <p>
+              I am a Senior AML Transaction Monitoring Analyst with hands-on experience across financial crime
+              surveillance, Know Your Customer (KYC) reviews, Customer Due Diligence (CDD), and Enhanced Due
+              Diligence (EDD) for correspondent and non-correspondent banking relationships. My work sits at the
+              intersection of transaction behaviour, customer risk, and regulatory obligation.
+            </p>
+            <p>
+              Day to day, I review customer transactions to identify suspicious activity, investigate alerts
+              generated from transaction monitoring systems, and analyze transactional behaviour against expected
+              account activity. This includes reviewing source of funds and source of wealth, assessing ownership
+              structures and business relationships, and conducting risk-based investigations across high-risk
+              jurisdictions and typologies such as structuring and third-party transaction risk.
+            </p>
+            <p>
+              I escalate suspicious cases in line with internal policy, prepare clear and defensible investigation
+              documentation, and work closely with global compliance teams to ensure adherence to AML regulations.
+              Beyond casework, I contribute to quality assurance — reviewing completed investigations, identifying
+              gaps, and recommending process improvements that raise the standard of the wider team.
+            </p>
+
+            <ul class="about__responsibilities" role="list">
+              <li>Reviewing customer transactions</li>
+              <li>Identifying suspicious activities</li>
+              <li>Investigating AML alerts</li>
+              <li>Analyzing transaction behaviour</li>
+              <li>Reviewing source of funds</li>
+              <li>Reviewing source of wealth</li>
+              <li>Risk-based investigations</li>
+              <li>Escalating suspicious cases</li>
+              <li>Preparing investigation documentation</li>
+              <li>Working with global compliance teams</li>
+              <li>Ensuring adherence to AML regulations</li>
+            </ul>
+          </div>
+
+          <aside class="about__panel">
+            <div class="glass-card about__id-card">
+              <div class="about__id-header">
+                <span class="about__id-label">Analyst Profile</span>
+                <span class="chip chip--cleared">Active</span>
+              </div>
+              <dl class="about__id-list">
+                <div><dt>Focus Areas</dt><dd>Transaction Monitoring · KYC · CDD/EDD</dd></div>
+                <div><dt>Banking Coverage</dt><dd>Correspondent &amp; Non-Correspondent</dd></div>
+                <div><dt>Regions Supported</dt><dd>United States · Hong Kong</dd></div>
+                <div><dt>Specialties</dt><dd>Sanctions &amp; Risk Typologies, QA</dd></div>
+              </dl>
+              <div class="about__id-footer">Clearance level reflects internal QA review standing.</div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section experience" id="experience">
+      <div class="container">
+        <p class="section__eyebrow">02 — Track Record</p>
+        <h2 class="section__title">Professional Experience</h2>
+
+        <div class="timeline">
+          <div class="timeline__line" aria-hidden="true"></div>
+
+          <article class="timeline__item">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="glass-card timeline__card">
+              <div class="timeline__head">
+                <div>
+                  <h3 class="timeline__role">Senior Analyst — Financial Crime Surveillance</h3>
+                  <p class="timeline__meta">Global Financial Institution &nbsp;·&nbsp; <time>Month Year – Present</time></p>
+                </div>
+                <span class="chip chip--escalated">Current Role</span>
+              </div>
+
+              <div class="timeline__groups">
+                <div class="timeline__group">
+                  <h4>Investigations &amp; Monitoring</h4>
+                  <ul role="list">
+                    <li>Conduct AML transaction monitoring investigations end-to-end.</li>
+                    <li>Review customer transactions for suspicious behaviour.</li>
+                    <li>Investigate alerts generated from transaction monitoring systems.</li>
+                    <li>Identify money laundering and financial crime risks.</li>
+                    <li>Analyze customer transactional behaviour against expected activity.</li>
+                    <li>Identify structuring activities and third-party transaction risks.</li>
+                    <li>Review transactions inconsistent with customer profiles.</li>
+                  </ul>
+                </div>
+
+                <div class="timeline__group">
+                  <h4>KYC / CDD &amp; Risk Review</h4>
+                  <ul role="list">
+                    <li>Perform KYC and Customer Due Diligence reviews.</li>
+                    <li>Review Source of Funds and Source of Wealth documentation.</li>
+                    <li>Review ownership structures and business relationships.</li>
+                    <li>Handle Request for Information (RFI) cases.</li>
+                    <li>Assess sanctions and AML risk exposure.</li>
+                    <li>Investigate high-risk jurisdictions and customer typologies.</li>
+                  </ul>
+                </div>
+
+                <div class="timeline__group">
+                  <h4>Correspondent Banking Coverage</h4>
+                  <ul role="list">
+                    <li>Support US Correspondent Banking investigation processes.</li>
+                    <li>Support Hong Kong Non-Correspondent Banking reviews.</li>
+                    <li>Collaborate with global compliance teams across regions.</li>
+                    <li>Escalate suspicious cases in line with regulatory requirements.</li>
+                    <li>Support broader regulatory compliance requirements.</li>
+                  </ul>
+                </div>
+
+                <div class="timeline__group">
+                  <h4>Quality Assurance &amp; Mentoring</h4>
+                  <ul role="list">
+                    <li>Mentor new analysts and provide process guidance.</li>
+                    <li>Review completed investigations for quality assurance.</li>
+                    <li>Ensure compliance with internal procedures.</li>
+                    <li>Identify investigation gaps and recommend improvements.</li>
+                    <li>Prepare clear, audit-ready investigation documentation.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <p class="section__eyebrow">03 — Capabilities</p>
+        <h2 class="section__title">Core Skills</h2>
+
+        <h3 class="skills__subtitle">Technical Skills</h3>
+        <div class="skills__grid" id="technicalSkills"></div>
+
+        <h3 class="skills__subtitle skills__subtitle--spaced">Professional Skills</h3>
+        <div class="skills__grid skills__grid--soft" id="professionalSkills"></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <p class="section__eyebrow">04 — Featured Work</p>
+        <h2 class="section__title">Featured AML Project</h2>
+
+        <div class="project glass-card">
+          <div class="project__info">
+            <span class="chip chip--sar">Flagship Build</span>
+            <h3 class="project__title">AI-Powered AML Transaction Monitoring Simulator</h3>
+            <p class="project__desc">
+              A realistic AML Transaction Monitoring Simulator that replicates the workflow financial institutions
+              follow during real-world AML investigations — from alert generation through to final analyst
+              disposition. Built to demonstrate practical, working knowledge of financial crime compliance, not just
+              theory.
+            </p>
+
+            <ul class="project__features" role="list">
+              <li>100 realistic AML alerts</li>
+              <li>Analyst investigation dashboard</li>
+              <li>Customer profile review</li>
+              <li>Transaction history analysis</li>
+              <li>Alert investigation workflow</li>
+              <li>AI investigation assistant</li>
+              <li>Suspicious activity detection</li>
+              <li>Risk analysis scoring</li>
+              <li>Investigation notes</li>
+              <li>Alert disposition &amp; case reporting</li>
+              <li>Admin dashboard</li>
+              <li>Analyst performance tracking</li>
+            </ul>
+
+            <div class="project__tech">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+
+            <div class="project__actions">
+              <a href="https://123412345678.github.io/aml-investigation-simulator/" class="btn btn--primary" target="_blank" rel="noopener">Live Demo</a>
+              <a href="https://github.com/123412345678" class="btn btn--ghost" target="_blank" rel="noopener">GitHub Repository</a>
+            </div>
+          </div>
+
+          <div class="project__visual" aria-hidden="true">
+            <div class="mockup">
+              <div class="mockup__bar"><span></span><span></span><span></span></div>
+              <div class="mockup__body">
+                <div class="mockup__row">
+                  <span class="mockup__label">Alert #A-0042</span>
+                  <span class="chip chip--escalated">Reviewing</span>
+                </div>
+                <div class="mockup__bars">
+                  <div class="mockup__bar-fill" style="--w:72%"></div>
+                  <div class="mockup__bar-fill" style="--w:45%"></div>
+                  <div class="mockup__bar-fill" style="--w:88%"></div>
+                </div>
+                <div class="mockup__row">
+                  <span class="mockup__label">Risk Score</span>
+                  <span class="mockup__score">86<small>/100</small></span>
+                </div>
+                <div class="mockup__row">
+                  <span class="mockup__label">Disposition</span>
+                  <span class="chip chip--sar">SAR Recommended</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEARNING -->
+    <section class="section learning" id="learning">
+      <div class="container">
+        <p class="section__eyebrow">05 — Growth</p>
+        <h2 class="section__title">Learning &amp; Professional Development</h2>
+
+        <div class="learning__list" id="learningList">
+          <div class="glass-card learning__item">
+            <div class="learning__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6">
+                <path d="M2 8l10-5 10 5-10 5-10-5z"/><path d="M6 10.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-5.5"/>
+              </svg>
+            </div>
+            <div class="learning__body">
+              <h3>Leveraging Generative AI in Finance and Accounting</h3>
+              <p>LinkedIn Learning</p>
+            </div>
+            <span class="chip chip--cleared">Completed</span>
+          </div>
+
+          <div class="learning__item learning__item--placeholder">
+            <span>+ Additional coursework will appear here</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <p class="section__eyebrow">06 — Get In Touch</p>
+        <h2 class="section__title">Contact</h2>
+        <p class="contact__lede">Open to Senior AML / Financial Crime Compliance opportunities.</p>
+
+        <div class="contact__grid">
+          <a href="https://www.linkedin.com/in/preethi-victor-189617246/" class="glass-card contact__card" target="_blank" rel="noopener">
+            <span class="contact__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.6c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96V21H9z"/></svg>
+            </span>
+            <span class="contact__label">LinkedIn</span>
+            <span class="contact__value">linkedin.com/in/preethi-victor-189617246</span>
+          </a>
+
+          <a href="https://github.com/123412345678" class="glass-card contact__card" target="_blank" rel="noopener">
+            <span class="contact__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 .5a11.5 11.5 0 00-3.64 22.42c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.28 1.2-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 015.8 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.75.81 1.2 1.83 1.2 3.09 0 4.43-2.7 5.4-5.27 5.69.42.36.78 1.07.78 2.16v3.2c0 .31.2.67.8.56A11.5 11.5 0 0012 .5z"/></svg>
+            </span>
+            <span class="contact__label">GitHub</span>
+            <span class="contact__value">/PreethiVictor (123412345678)</span>
+          </a>
+
+          <a href="mailto:your.email@example.com" class="glass-card contact__card">
+            <span class="contact__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 5h18v14H3z"/><path d="M3 6l9 7 9-7"/></svg>
+            </span>
+            <span class="contact__label">Email</span>
+            <span class="contact__value">preeth6139@gmail.com</span>
+          </a>
+
+          <a href="RESUME (3).pdf" class="glass-card contact__card" download>
+            <span class="contact__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v12m0 0l-4-4m4 4l4-4"/><path d="M4 17v3h16v-3"/></svg>
+            </span>
+            <span class="contact__label">Resume</span>
+            <span class="contact__value">Download PDF</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div class="site-footer__brand">
+        Preethi Victor<span class="nav__brand-dot">.</span>
+        <p>Senior AML Transaction Monitoring Analyst</p>
+      </div>
+
+      <div class="site-footer__socials">
+        <a href="https://www.linkedin.com/in/preethi-victor-189617246/" aria-label="LinkedIn" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.6c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96V21H9z"/></svg>
+        </a>
+        <a href="https://github.com/123412345678" aria-label="GitHub" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 .5a11.5 11.5 0 00-3.64 22.42c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.28 1.2-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 015.8 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.75.81 1.2 1.83 1.2 3.09 0 4.43-2.7 5.4-5.27 5.69.42.36.78 1.07.78 2.16v3.2c0 .31.2.67.8.56A11.5 11.5 0 0012 .5z"/></svg>
+        </a>
+        <a href="preeth6139@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 5h18v14H3z"/><path d="M3 6l9 7 9-7"/></svg>
+        </a>
+      </div>
+
+      <p class="site-footer__copyright">© <span id="year"></span>Preethi Victor. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
